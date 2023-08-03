@@ -48,7 +48,7 @@ jobs:
       registry-username: ${{ github.actor }}
       registry-password: ${{ secrets.GITHUB_TOKEN }}
     with:
-      image: 'ghcr.io/gopuman/wordsmith-api:${{ needs.docker-build-pr.outputs.image-tag }}'
+      image: 'ghcr.io/mostlydevops/wordsmith-api:${{ needs.docker-build-pr.outputs.image-tag }}'
       exit-code: 1
       severity: HIGH,CRITICAL
       ignore-unfixed: true
